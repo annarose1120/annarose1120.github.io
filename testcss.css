@@ -1,8 +1,7 @@
-.title{
-  text-align: center;
-  color: teal;
-  font-size : 50px;
-  margin: 1em;
+
+
+*{
+  box-sizing:border-box;
 }
 
 h1{
@@ -11,18 +10,62 @@ h1{
   font-size: 25px;
   margin: 1em;
 }
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+  border-width: 0.5em;
+  border-style:double none;
+  border-color: darkslategray;
+  width: 100vw;
+}
+aside{
+  text-align: center;
+}
 
 nav > a{
   margin: 1em;
   color: mediumorchid;
+
 }
 
 body{
   background: aliceblue;
 }
 
+div{
+  width:100vw;
+}
+
 p{
   width: 75%;
   text-align: left;
   margin: 2em;
+}
+
+.title{
+  text-align: center;
+  color: teal;
+  font-size : 50px;
+  margin: 1em;
+}
+
+.flipper * :hover{
+  transform: rotate(180deg);
+}
+button.hiddenmessage{
+  color: white;
+}
+button.hiddenmessage:active{
+  color:black;
+}
+.hidden{
+  color: aliceblue;
+}
+.hidden:hover{
+  color: black;
+}
+.invisible{
+  color:aliceblue;
 }
